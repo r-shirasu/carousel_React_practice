@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 // get our fontawesome imports
 
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
