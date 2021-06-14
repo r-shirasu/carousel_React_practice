@@ -1,0 +1,36 @@
+.review {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+}
+
+.img-container {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.img-container img {
+  margin-top: 20px;
+  border-radius: 200px;
+  box-shadow: 8px -14px 0px 0 #03a9f4b3;
+}
+
+h4 {
+  font-size: 1.5em;
+  color: #1d2b73;
+  text-align: center;
+  letter-spacing: 0.4em;
+  margin: 0;
+}
+
+p#color {
+  text-align: center;
+  color: #03a9f4b3;
+  margin: 0;
+}
+
+p#info {
+  text-align: center;
+  color: #1d2b73;
+}
