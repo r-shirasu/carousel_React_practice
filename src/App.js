@@ -1,4 +1,5 @@
 import "./App.scss";
+import { Fruits } from "./Fruits";
 // get our fontawesome imports
 
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +14,7 @@ function App() {
         <h2>Fruits menu</h2>
         <div class="underline"></div>
       </div>
-
+      <Fruits />
       <div className="button-container">
         <button class="prev-btn">
           <FontAwesomeIcon icon={faChevronLeft} />
