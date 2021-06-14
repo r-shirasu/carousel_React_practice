@@ -1,0 +1,59 @@
+body {
+  background-color: #dff0f3;
+}
+
+.title {
+  width: 400px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #1d2b73;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.underline {
+  border: solid;
+  border-color: #03a9f4b3;
+  width: 70px;
+  margin: auto;
+  margin-top: -30px;
+}
+
+.button-container {
+  width: 70px;
+  margin: auto;
+}
+
+.prev-btn {
+  border: none 0px;
+  font-size: 2em;
+  background-color: white;
+  color: #03a9f4b3;
+  cursor: pointer;
+}
+
+.next-btn {
+  border: none 0px;
+  font-size: 2em;
+  background-color: white;
+  color: #03a9f4b3;
+  cursor: pointer;
+}
+
+.random-btn {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 100px;
+  border-color: #03a9f4b3;
+  color: #03a9f4b3;
+  background-color: white;
+  cursor: pointer;
+}
