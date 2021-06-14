@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+// get our fontawesome imports
+
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section class="container">
+      <div className="title">
+        <h2>Fruits menu</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div className="button-container">
+        <button class="prev-btn">
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+        <button class="next-btn">
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
+      </div>
+      <button className="random-btn">Random</button>
+    </section>
   );
 }
 
