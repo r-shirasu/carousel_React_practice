@@ -13,10 +13,10 @@ export const Fruits = () => {
 
   const increase = () => {
     setCount(count + 1);
-
-    // if (count > fruitsData.length - 1) {
-    //   setCount(0);
-    // }
+    console.log(count);
+    if (count === fruitsData.length - 1) {
+      setCount(0);
+    }
   };
 
   return (
