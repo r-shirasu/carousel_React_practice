@@ -1,5 +1,5 @@
 import "./Fruits.scss";
-import React from "react";
+import React, { useState } from "react";
 import { fruitsData } from "./data";
 // get our fontawesome imports
 
@@ -9,22 +9,31 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Fruits = () => {
-  let currentFruits = 0;
+  const [count, setCount] = useState(0);
+
+  const increase = () => {
+    setCount(count + 1);
+
+    // if (count > fruitsData.length - 1) {
+    //   setCount(0);
+    // }
+  };
+
   return (
     <>
       <div className="review">
         <div className="img-container">
-          <img src={fruitsData[currentFruits].img} id="img" alt=""></img>
-          <h4 id="fruits">{fruitsData[currentFruits].fruitsName}</h4>
-          <p id="color">{fruitsData[currentFruits].color}</p>
-          <p id="info">{fruitsData[currentFruits].text}</p>
+          <img src={fruitsData[count].img} id="img" alt=""></img>
+          <h4 id="fruits">{fruitsData[count].fruitsName}</h4>
+          <p id="color">{fruitsData[count].color}</p>
+          <p id="info">{fruitsData[count].text}</p>
         </div>
         <div className="button-container">
           <button className="prev-btn">
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
           <button className="next-btn">
-            <FontAwesomeIcon icon={faChevronRight} />
+            <FontAwesomeIcon icon={faChevronRight} onClick={increase} />
           </button>
         </div>
       </div>
