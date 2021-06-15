@@ -1,8 +1,8 @@
 import "./Fruits.scss";
 import React, { useState } from "react";
 import { fruitsData } from "./data";
-// get our fontawesome imports
 
+// get our fontawesome imports
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
