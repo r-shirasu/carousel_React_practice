@@ -14,14 +14,16 @@ function App() {
         <h2>Fruits menu</h2>
         <div className="underline"></div>
       </div>
-      <Fruits />
-      <div className="button-container">
-        <button className="prev-btn">
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </button>
-        <button className="next-btn">
-          <FontAwesomeIcon icon={faChevronRight} />
-        </button>
+      <div className="review">
+        <Fruits />
+        <div className="button-container">
+          <button className="prev-btn">
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+          <button className="next-btn">
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+        </div>
       </div>
       <button className="random-btn">Random</button>
     </section>
