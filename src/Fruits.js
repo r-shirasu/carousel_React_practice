@@ -18,5 +18,3 @@ export const Fruits = () => {
     </>
   );
 };
-
-// F9gZemJQ;
