@@ -13,7 +13,7 @@ export const Fruits = () => {
 
   const increase = () => {
     setCount(count + 1);
-    console.log(count);
+
     if (count === fruitsData.length - 1) {
       setCount(0);
     }
@@ -21,7 +21,6 @@ export const Fruits = () => {
 
   const decrease = () => {
     setCount(count - 1);
-    console.log(count);
 
     if (count === 0) {
       setCount(4);
