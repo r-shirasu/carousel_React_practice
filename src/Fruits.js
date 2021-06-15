@@ -20,7 +20,12 @@ export const Fruits = () => {
   };
 
   const decrease = () => {
-    console.log("クリック");
+    setCount(count - 1);
+    console.log(count);
+
+    if (count === 0) {
+      setCount(4);
+    }
   };
 
   return (
