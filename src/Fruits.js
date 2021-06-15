@@ -49,9 +49,11 @@ export const Fruits = () => {
           </button>
         </div>
       </div>
-      <button className="random-btn" onClick={randomEvent}>
-        Random
-      </button>
+      <div className="randombutton-container">
+        <button className="random-btn" onClick={randomEvent}>
+          Random
+        </button>
+      </div>
     </>
   );
 };
