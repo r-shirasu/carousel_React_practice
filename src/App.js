@@ -9,17 +9,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   return (
-    <section class="container">
+    <section className="container">
       <div className="title">
         <h2>Fruits menu</h2>
-        <div class="underline"></div>
+        <div className="underline"></div>
       </div>
       <Fruits />
       <div className="button-container">
-        <button class="prev-btn">
+        <button className="prev-btn">
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <button class="next-btn">
+        <button className="next-btn">
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
