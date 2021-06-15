@@ -13,9 +13,17 @@ export const Fruits = () => {
 
   const increase = () => {
     setCount(count + 1);
-    console.log(count);
+
     if (count === fruitsData.length - 1) {
       setCount(0);
+    }
+  };
+
+  const decrease = () => {
+    setCount(count - 1);
+
+    if (count === 0) {
+      setCount(4);
     }
   };
 
@@ -30,7 +38,7 @@ export const Fruits = () => {
         </div>
         <div className="button-container">
           <button className="prev-btn">
-            <FontAwesomeIcon icon={faChevronLeft} />
+            <FontAwesomeIcon icon={faChevronLeft} onClick={decrease} />
           </button>
           <button className="next-btn">
             <FontAwesomeIcon icon={faChevronRight} onClick={increase} />
