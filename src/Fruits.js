@@ -27,6 +27,10 @@ export const Fruits = () => {
     }
   };
 
+  const randomEvent = () => {
+    console.log("クリック");
+  };
+
   return (
     <>
       <div className="review">
@@ -45,7 +49,9 @@ export const Fruits = () => {
           </button>
         </div>
       </div>
-      <button className="random-btn">Random</button>
+      <button className="random-btn" onClick={randomEvent}>
+        Random
+      </button>
     </>
   );
 };
