@@ -28,7 +28,7 @@ export const Fruits = () => {
   };
 
   const randomEvent = () => {
-    console.log("クリック");
+    setCount(Math.floor(Math.random() * fruitsData.length));
   };
 
   return (
