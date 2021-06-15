@@ -9,31 +9,26 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Fruits = () => {
+  let currentFruits = 0;
   return (
     <>
-      {fruitsData.map((fruitsarray, fruitsIndex) => {
-        return (
-          <>
-            <div className="review">
-              <div className="img-container" key={fruitsarray.id}>
-                <img src={fruitsarray.img} id="img" alt=""></img>
-                <h4 id="fruits">{fruitsarray.fruitsName}</h4>
-                <p id="color">{fruitsarray.color}</p>
-                <p id="info">{fruitsarray.text}</p>
-              </div>
-              <div className="button-container">
-                <button className="prev-btn">
-                  <FontAwesomeIcon icon={faChevronLeft} />
-                </button>
-                <button className="next-btn">
-                  <FontAwesomeIcon icon={faChevronRight} />
-                </button>
-              </div>
-            </div>
-            <button className="random-btn">Random</button>
-          </>
-        );
-      })}
+      <div className="review">
+        <div className="img-container">
+          <img src={fruitsData[currentFruits].img} id="img" alt=""></img>
+          <h4 id="fruits">{fruitsData[currentFruits].fruitsName}</h4>
+          <p id="color">{fruitsData[currentFruits].color}</p>
+          <p id="info">{fruitsData[currentFruits].text}</p>
+        </div>
+        <div className="button-container">
+          <button className="prev-btn">
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+          <button className="next-btn">
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+        </div>
+      </div>
+      <button className="random-btn">Random</button>
     </>
   );
 };
