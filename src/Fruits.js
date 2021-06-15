@@ -27,6 +27,10 @@ export const Fruits = () => {
     }
   };
 
+  const randomEvent = () => {
+    setCount(Math.floor(Math.random() * fruitsData.length));
+  };
+
   return (
     <>
       <div className="review">
@@ -45,7 +49,11 @@ export const Fruits = () => {
           </button>
         </div>
       </div>
-      <button className="random-btn">Random</button>
+      <div className="randombutton-container">
+        <button className="random-btn" onClick={randomEvent}>
+          Random
+        </button>
+      </div>
     </>
   );
 };
