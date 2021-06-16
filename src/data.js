@@ -5,6 +5,7 @@ export const fruitsData = [
     color: "Pink",
     img: `${process.env.PUBLIC_URL}/fruits/category_tn_190.jpeg`,
     text: "山梨県で多く取れます",
+    alt: "Peach!",
   },
   {
     id: 1,
@@ -12,6 +13,7 @@ export const fruitsData = [
     color: "Red",
     img: `${process.env.PUBLIC_URL}/fruits/category_tn_192.jpeg`,
     text: "山形県で多く取れます",
+    alt: "Cherry!",
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ export const fruitsData = [
     color: "Red",
     img: `${process.env.PUBLIC_URL}/fruits/category_tn_193.jpeg`,
     text: "青森県で多く取れます",
+    alt: "Apple!",
   },
   {
     id: 3,
@@ -26,6 +29,7 @@ export const fruitsData = [
     color: "Purple",
     img: `${process.env.PUBLIC_URL}/fruits/category_tn_195.jpeg`,
     text: "山梨で多く取れます",
+    alt: "Grape!",
   },
   {
     id: 4,
@@ -33,5 +37,6 @@ export const fruitsData = [
     color: "Yellow",
     img: `${process.env.PUBLIC_URL}/fruits/category_tn_197.jpeg`,
     text: "朝食にぴったりです",
+    alt: "Banana!",
   },
 ];
