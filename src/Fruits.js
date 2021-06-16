@@ -34,7 +34,11 @@ export const Fruits = () => {
   return (
     <div className="review">
       <div className="img-container">
-        <img src={fruitsData[count].img} id="img" alt=""></img>
+        <img
+          src={fruitsData[count].img}
+          id="img"
+          alt={fruitsData[count].alt}
+        ></img>
         <h4 id="fruits">{fruitsData[count].fruitsName}</h4>
         <p id="color">{fruitsData[count].color}</p>
         <p id="info">{fruitsData[count].text}</p>
