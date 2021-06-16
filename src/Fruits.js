@@ -32,28 +32,27 @@ export const Fruits = () => {
   };
 
   return (
-    <>
-      <div className="review">
-        <div className="img-container">
-          <img src={fruitsData[count].img} id="img" alt=""></img>
-          <h4 id="fruits">{fruitsData[count].fruitsName}</h4>
-          <p id="color">{fruitsData[count].color}</p>
-          <p id="info">{fruitsData[count].text}</p>
-        </div>
-        <div className="button-container">
-          <button className="prev-btn">
-            <FontAwesomeIcon icon={faChevronLeft} onClick={decrease} />
-          </button>
-          <button className="next-btn">
-            <FontAwesomeIcon icon={faChevronRight} onClick={increase} />
-          </button>
-        </div>
+    <div className="review">
+      <div className="img-container">
+        <img src={fruitsData[count].img} id="img" alt=""></img>
+        <h4 id="fruits">{fruitsData[count].fruitsName}</h4>
+        <p id="color">{fruitsData[count].color}</p>
+        <p id="info">{fruitsData[count].text}</p>
       </div>
+      <div className="button-container">
+        <button className="prev-btn">
+          <FontAwesomeIcon icon={faChevronLeft} onClick={decrease} />
+        </button>
+        <button className="next-btn">
+          <FontAwesomeIcon icon={faChevronRight} onClick={increase} />
+        </button>
+      </div>
+
       <div className="randombutton-container">
         <button className="random-btn" onClick={randomEvent}>
           Random
         </button>
       </div>
-    </>
+    </div>
   );
 };
