@@ -1,5 +1,5 @@
 import "./Fruits.scss";
-import React, { useState } from "react";
+import React from "react";
 import { fruitsData } from "./data";
 
 // get our fontawesome imports
