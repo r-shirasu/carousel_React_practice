@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Fruits = () => {
   const [fruitsDataIndex, setFruitsDataIndex] = useState(0);
 
-  const increment = () => {
+  const incrementFruitsIndex = () => {
     console.log("クリック");
   };
 
@@ -31,7 +31,10 @@ export const Fruits = () => {
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <button className="next-btn">
-          <FontAwesomeIcon icon={faChevronRight} onClick={increment} />
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            onClick={incrementFruitsIndex}
+          />
         </button>
       </div>
 
