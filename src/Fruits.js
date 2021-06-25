@@ -28,7 +28,7 @@ export const Fruits = () => {
   };
 
   const randomFruitsIndex = () => {
-    console.log("クリック");
+    setFruitsDataIndex(Math.floor(Math.random() * fruitsData.length));
   };
 
   return (
