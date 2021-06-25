@@ -27,6 +27,10 @@ export const Fruits = () => {
     }
   };
 
+  const randomFruitsIndex = () => {
+    console.log("クリック");
+  };
+
   return (
     <div className="review">
       <div className="img-container">
@@ -54,7 +58,9 @@ export const Fruits = () => {
       </div>
 
       <div className="randombutton-container">
-        <button className="random-btn">Random</button>
+        <button className="random-btn" onClick={randomFruitsIndex}>
+          Random
+        </button>
       </div>
     </div>
   );
