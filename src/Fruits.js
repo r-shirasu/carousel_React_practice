@@ -1,5 +1,5 @@
 import "./Fruits.scss";
-import React from "react";
+import React, { useState } from "react";
 import { fruitsData } from "./data";
 
 // get our fontawesome imports
@@ -9,13 +9,18 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Fruits = () => {
+  const [fruitsDataIndex, setFruitsDataIndex] = useState(0);
+
   return (
     <div className="review">
       <div className="img-container">
-        <img src={fruitsData[0].img} alt={fruitsData[0].alt}></img>
-        <h4 className="fruits">{fruitsData[0].fruitsName}</h4>
-        <p className="color">{fruitsData[0].color}</p>
-        <p className="info">{fruitsData[0].text}</p>
+        <img
+          src={fruitsData[fruitsDataIndex].img}
+          alt={fruitsData[fruitsDataIndex].alt}
+        ></img>
+        <h4 className="fruits">{fruitsData[fruitsDataIndex].fruitsName}</h4>
+        <p className="color">{fruitsData[fruitsDataIndex].color}</p>
+        <p className="info">{fruitsData[fruitsDataIndex].text}</p>
       </div>
       <div className="button-container">
         <button className="prev-btn">
