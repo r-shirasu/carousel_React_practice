@@ -12,7 +12,11 @@ export const Fruits = () => {
   const [fruitsDataIndex, setFruitsDataIndex] = useState(0);
 
   const incrementFruitsIndex = () => {
-    console.log("クリック");
+    if (fruitsDataIndex >= fruitsData.length - 1) {
+      setFruitsDataIndex(0);
+    } else {
+      setFruitsDataIndex(fruitsDataIndex + 1);
+    }
   };
 
   return (
