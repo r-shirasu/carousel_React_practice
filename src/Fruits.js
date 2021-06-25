@@ -20,7 +20,11 @@ export const Fruits = () => {
   };
 
   const decrementFruitsIndex = () => {
-    console.log("クリック");
+    if (fruitsDataIndex === 0) {
+      setFruitsDataIndex(fruitsData.length - 1);
+    } else {
+      setFruitsDataIndex(fruitsDataIndex - 1);
+    }
   };
 
   return (
