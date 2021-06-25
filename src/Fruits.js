@@ -19,6 +19,10 @@ export const Fruits = () => {
     }
   };
 
+  const decrementFruitsIndex = () => {
+    console.log("クリック");
+  };
+
   return (
     <div className="review">
       <div className="img-container">
@@ -32,7 +36,10 @@ export const Fruits = () => {
       </div>
       <div className="button-container">
         <button className="prev-btn">
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            onClick={decrementFruitsIndex}
+          />
         </button>
         <button className="next-btn">
           <FontAwesomeIcon
