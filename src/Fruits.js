@@ -9,49 +9,25 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Fruits = () => {
-  const [count, setCount] = useState(0);
-
-  const increase = () => {
-    if (count >= fruitsData.length - 1) {
-      setCount(0);
-    } else {
-      setCount(count + 1);
-    }
-  };
-
-  const decrease = () => {
-    if (count === 0) {
-      setCount(fruitsData.length - 1);
-    } else {
-      setCount(count - 1);
-    }
-  };
-
-  const randomEvent = () => {
-    setCount(Math.floor(Math.random() * fruitsData.length));
-  };
-
   return (
     <div className="review">
       <div className="img-container">
-        <img src={fruitsData[count].img} alt={fruitsData[count].alt}></img>
-        <h4 className="fruits">{fruitsData[count].fruitsName}</h4>
-        <p className="color">{fruitsData[count].color}</p>
-        <p className="info">{fruitsData[count].text}</p>
+        <img></img>
+        <h4 className="fruits"></h4>
+        <p className="color"></p>
+        <p className="info"></p>
       </div>
       <div className="button-container">
         <button className="prev-btn">
-          <FontAwesomeIcon icon={faChevronLeft} onClick={decrease} />
+          <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <button className="next-btn">
-          <FontAwesomeIcon icon={faChevronRight} onClick={increase} />
+          <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
 
       <div className="randombutton-container">
-        <button className="random-btn" onClick={randomEvent}>
-          Random
-        </button>
+        <button className="random-btn">Random</button>
       </div>
     </div>
   );
