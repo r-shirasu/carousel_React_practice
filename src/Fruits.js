@@ -12,10 +12,10 @@ export const Fruits = () => {
   return (
     <div className="review">
       <div className="img-container">
-        <img></img>
-        <h4 className="fruits"></h4>
-        <p className="color"></p>
-        <p className="info"></p>
+        <img src={fruitsData[0].img} alt={fruitsData[0].alt}></img>
+        <h4 className="fruits">{fruitsData[0].fruitsName}</h4>
+        <p className="color">{fruitsData[0].color}</p>
+        <p className="info">{fruitsData[0].text}</p>
       </div>
       <div className="button-container">
         <button className="prev-btn">
